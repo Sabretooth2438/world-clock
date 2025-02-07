@@ -1,16 +1,19 @@
-import "./App.css";
+import './App.css'
+import WorldClock from './components/WorldClock.jsx'
 
-function App() {
-  return (
-    <>
-      <h1>World Clock</h1>
-      <div className="card">
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-    </>
-  );
-}
+const timeZones = [
+  "UTC",
+  "Asia/Bahrain",
+  "America/New_York",
+  "Europe/London",
+  "Asia/Tokyo"
+]
 
-export default App;
+const App = () => (
+  <div>
+    <h1>World Clock</h1>
+    <WorldClock timeZones={timeZones} />
+  </div>
+)
+
+export default App
