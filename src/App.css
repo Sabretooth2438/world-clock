@@ -1,17 +1,16 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-
-
+/* ========== GLOBAL STYLES ========== */
 body {
-  background-color: #181818;
-  color: white;
+  background-color: #181818 !important;
+  color: white !important;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
 }
 
+/* ========== APP.JSX STYLES ========== */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -19,16 +18,44 @@ body {
   text-align: center;
 }
 
-/* Bootstrap Card Customization */
+/* ========== CLOCK.JSX STYLES ========== */
 .clock-card {
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
   padding: 20px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Ensure text is readable */
 .clock-card h4, .clock-card p {
   color: white !important;
 }
 
+/* ========== WORLDCLOCK.JSX STYLES ========== */
+.worldclock-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Center last row if odd number of clocks */
+.worldclock-container:has(:nth-child(odd):last-child) {
+  justify-content: center;
+}
+
+.utc-offset {
+  color: #bbb;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-left: 5px;
+}
