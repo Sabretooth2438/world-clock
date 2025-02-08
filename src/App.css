@@ -1,4 +1,4 @@
-/* ========== GLOBAL STYLES ========== */
+/* GLOBAL STYLES */
 body {
   background-color: #181818 !important;
   color: white !important;
@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
 }
 
-/* ========== APP.JSX STYLES ========== */
+/* APP.JSX STYLES */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -18,7 +18,7 @@ body {
   text-align: center;
 }
 
-/* ========== CLOCK.JSX STYLES ========== */
+/* CLOCK.JSX STYLES */
 .clock-card {
   background-color: rgba(255, 255, 255, 0.1) !important;
   color: white !important;
@@ -37,7 +37,7 @@ body {
   color: white !important;
 }
 
-/* ========== WORLDCLOCK.JSX STYLES ========== */
+/* WORLDCLOCK.JSX STYLES */
 .worldclock-container {
   margin-top: 2rem;
   display: flex;
@@ -48,7 +48,6 @@ body {
   margin: 0 auto;
 }
 
-/* Center last row if odd number of clocks */
 .worldclock-container:has(:nth-child(odd):last-child) {
   justify-content: center;
 }
